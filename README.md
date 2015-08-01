@@ -9,13 +9,17 @@
 先来推荐本书 **[《iOS Auto Layout开发秘籍（第2版）》](http://item.jd.com/11600193.html)** ，本书中写了很多 AutoLayout 的处理方案，也写出一套类别可以用来便捷处理 AutoLayout 。    
 先上个 Demo **[FuckKeyboard](https://github.com/DianQK/FuckKeyboard)** ，方法很简单，关键点来源于前面推荐的书提到了布局当中可以对一个视图添加四个以上的约束，并更改对应约束的 **Priority** 。这样当添加一个视图在出现冲突时，会去满足优先级高的约束，而去高优先级的约束又不会因为约束条件不足出现视图丢失。    
 先上效果（图片还是略大 7.4 MB）：    
+
 <center>
 ![](https://raw.githubusercontent.com/DianQK/FuckKeyboard/master/Screenshots/FuckKeyboardScreenshots.gif)
-</center>
-看起来还是凑合的哈～（没有考虑 5s 等设备，运行时请尽量选择 iPhone 6 ）。本动态图中的需求是登录按钮和输入框都向上移动，头像变小。以登录按钮和输入框举例，设置约束如图：     
+</center>       
+
+看起来还是凑合的哈～（没有考虑 5s 等设备，运行时请尽量选择 iPhone 6 ）。本动态图中的需求是登录按钮和输入框都向上移动，头像变小。以登录按钮和输入框举例，设置约束如图：   
+
 <center>
 ![](http://ww2.sinaimg.cn/mw690/89f500a9jw1eung362hizj20930gqq42.jpg)
-</center>    
+</center>       
+
 虚线是什么？低优先级的约束。这里的布局大概是这样的： Login 按钮距底部为30，输入框距离按钮为10，这样设置的好处是什么呢？键盘弹出的时候只去打破虚线的约束，其他不变，然而这些位置都是基于按钮的位置的，所以只要去更改按钮距底部的约束就好啦。现在要做的就只是添加一个高优先级约束，键盘收起来的时候删除这个约束。代码如下：  
  
 ```Objective-C
