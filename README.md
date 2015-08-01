@@ -8,7 +8,7 @@
 所以！我们来亲自用一种相对简洁的方式来处理键盘这个坑。实际业务开发中，大多视图的搭建都是在 SB 或者 xib 中，布局多是使用 **AutoLayout** 。那么进行视图的移动总是一种麻烦的事情，其实不然，在 AutoLayout 中处理动画可能会更方便一些。不需要过多的计算视图的大小、位置。    
 先来推荐本书 **[《iOS Auto Layout开发秘籍（第2版）》](http://item.jd.com/11600193.html)** ，本书中写了很多 AutoLayout 的处理方案，也写出一套类别可以用来便捷处理 AutoLayout 。    
 先上个 Demo **[FuckKeyboard](https://github.com/DianQK/FuckKeyboard)** ，方法很简单，关键点来源于前面推荐的书提到了布局当中可以对一个视图添加四个以上的约束，并更改对应约束的 **Priority** 。这样当添加一个视图在出现冲突时，会去满足优先级高的约束，而去高优先级的约束又不会因为约束条件不足出现视图丢失。    
-先上效果（图片还是略大 7.4 MB）：    
+先上效果（图片还是略大 7.4 MB ，建议直接运行 Demo ）：    
 
 <center>
 ![](https://raw.githubusercontent.com/DianQK/FuckKeyboard/master/Screenshots/FuckKeyboardScreenshots.gif)
