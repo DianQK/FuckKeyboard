@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15A235d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="all" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JcU-hC-7ry" userLabel="LoginButton">
+                                <rect key="frame" x="20" y="494" width="280" height="44"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.054901960780000002" green="0.73725490199999999" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Tvh-ox-j7a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HIO-BS-cVw" userLabel="ContentView">
+                                <rect key="frame" x="20" y="359" width="280" height="120"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SId-zp-MWV">
+                                        <rect key="frame" x="10" y="0.0" width="260" height="60"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="yGq-OE-H0h"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9WO-FK-CqY">
+                                        <rect key="frame" x="10" y="60" width="260" height="60"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="36F-Q4-tgq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zm4-dH-P0Y" userLabel="SepLine">
+                                        <rect key="frame" x="5" y="60" width="270" height="1"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="hph-g1-97K"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="9WO-FK-CqY" secondAttribute="trailing" constant="10" id="4e7-ZU-vPU"/>
+                                    <constraint firstAttribute="trailing" secondItem="SId-zp-MWV" secondAttribute="trailing" constant="10" id="7dD-tp-RfT"/>
+                                    <constraint firstItem="SId-zp-MWV" firstAttribute="leading" secondItem="HIO-BS-cVw" secondAttribute="leading" constant="10" id="D7r-XG-yoP"/>
+                                    <constraint firstAttribute="centerX" secondItem="Zm4-dH-P0Y" secondAttribute="centerX" id="E0N-dl-LVL"/>
+                                    <constraint firstItem="9WO-FK-CqY" firstAttribute="leading" secondItem="HIO-BS-cVw" secondAttribute="leading" constant="10" id="ILq-Bl-Klh"/>
+                                    <constraint firstAttribute="bottom" secondItem="9WO-FK-CqY" secondAttribute="bottom" id="NAy-u4-c1D"/>
+                                    <constraint firstAttribute="centerY" secondItem="Zm4-dH-P0Y" secondAttribute="centerY" id="TNe-oJ-yyG"/>
+                                    <constraint firstItem="Zm4-dH-P0Y" firstAttribute="leading" secondItem="HIO-BS-cVw" secondAttribute="leading" constant="5" id="TbN-TM-XsO"/>
+                                    <constraint firstAttribute="height" constant="120" id="kHj-0h-gmj"/>
+                                    <constraint firstItem="SId-zp-MWV" firstAttribute="top" secondItem="HIO-BS-cVw" secondAttribute="top" id="l8z-bc-sYa"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_icon" translatesAutoresizingMaskIntoConstraints="NO" id="2dG-cy-APe">
+                                <rect key="frame" x="60" y="70" width="200" height="200"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="900" constant="200" id="2Be-dV-yH9"/>
+                                    <constraint firstAttribute="width" secondItem="2dG-cy-APe" secondAttribute="height" multiplier="1:1" id="TYf-z6-x3w"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JcU-hC-7ry" firstAttribute="top" secondItem="HIO-BS-cVw" secondAttribute="bottom" constant="15" id="3oI-N6-7YW"/>
+                            <constraint firstItem="2dG-cy-APe" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="50" id="FW4-84-pAd"/>
+                            <constraint firstItem="JcU-hC-7ry" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="Id7-mr-LEy"/>
+                            <constraint firstAttribute="centerX" secondItem="2dG-cy-APe" secondAttribute="centerX" id="Ivl-SW-JyG"/>
+                            <constraint firstItem="HIO-BS-cVw" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="Mzi-B8-clW"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="JcU-hC-7ry" secondAttribute="bottom" priority="900" constant="30" id="WSp-oO-UcF"/>
+                            <constraint firstAttribute="trailing" secondItem="HIO-BS-cVw" secondAttribute="trailing" constant="20" id="e9E-mA-hEJ"/>
+                            <constraint firstAttribute="trailing" secondItem="JcU-hC-7ry" secondAttribute="trailing" constant="20" id="eKC-Ez-lZR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="iconImageView" destination="2dG-cy-APe" id="rc2-L8-8gE"/>
+                        <outlet property="loginButton" destination="JcU-hC-7ry" id="Bin-Y6-VWn"/>
+                        <outlet property="passwordTextField" destination="9WO-FK-CqY" id="2Jp-La-Obu"/>
+                        <outlet property="textContentView" destination="HIO-BS-cVw" id="7fy-8e-kdg"/>
+                        <outlet property="usernameTextField" destination="SId-zp-MWV" id="Gjl-vO-zmw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="181" y="330"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_icon" width="200" height="200"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
